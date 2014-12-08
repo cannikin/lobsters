@@ -64,6 +64,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.1)
     kgio (2.9.2)
+    libv8 (3.16.14.7)
     machinist (2.0)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -100,6 +101,7 @@ GEM
     raindrops (0.13.0)
     rake (10.4.2)
     rdiscount (2.1.7.1)
+    ref (1.0.5)
     riddle (1.5.11)
     rspec-collection_matchers (1.1.2)
       rspec-expectations (>= 2.99.0.beta1)
@@ -130,6 +132,9 @@ GEM
       colorize
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
     thinking-sphinx (3.1.2)
       activerecord (>= 3.1.0)
       builder (>= 2.1.2)
@@ -174,6 +179,7 @@ DEPENDENCIES
   rdiscount
   rspec-rails (~> 2.6)
   sqlite3
+  therubyracer
   thinking-sphinx
   uglifier
   unicorn
