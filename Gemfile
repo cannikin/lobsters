@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem "rails", "4.0.8"
-gem "sqlite3"
 
 # uncomment to use PostgreSQL
 # gem "pg"
@@ -28,6 +27,12 @@ gem "oauth"
 
 # for parsing incoming mail
 gem "mail"
+
+group :development do
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-chruby'
+end
 
 group :test, :development do
   gem "rspec-rails", "~> 2.6"
