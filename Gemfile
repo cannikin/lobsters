@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 
 gem "rails", "4.0.8"
+gem 'sass-rails'
+gem 'haml-rails'
 
 # uncomment to use PostgreSQL
 # gem "pg"
