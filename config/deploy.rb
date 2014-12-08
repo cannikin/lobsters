@@ -8,7 +8,8 @@ set :repo_url, 'https://github.com/cannikin/lobsters.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 set :branch, ENV["REVISION"] || ENV["BRANCH"] || "master"
 
-set :chruby_ruby, 'ruby-2.1.3-p242'
+set :chruby_ruby, 'ruby-2.1.3'
+# set :chruby_exec, "source /usr/local/share/chruby/chruby.sh && /usr/local/bin/chruby-exec"
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, '/var/www/my_app_name'
 
