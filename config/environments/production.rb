@@ -78,3 +78,25 @@ Lobsters::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 end
+
+
+# define site name and domain to be used globally, can be overridden in
+# config/initializers/production.rb
+class << Rails.application
+  def allow_invitation_requests?
+    true
+  end
+
+  def domain
+    "news.forwoodworkers.com"
+  end
+
+  def name
+    "News for Woodworkers"
+  end
+
+  # used as mailing list prefix and countinual prefix, cannot have spaces
+  def shortname
+    name.downcase.gsub(/[^a-z]/, "")
+  end
+end

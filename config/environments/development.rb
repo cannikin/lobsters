@@ -27,3 +27,25 @@ Lobsters::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 end
+
+
+# define site name and domain to be used globally, can be overridden in
+# config/initializers/production.rb
+class << Rails.application
+  def allow_invitation_requests?
+    true
+  end
+
+  def domain
+    "news.forwoodworkers.dev"
+  end
+
+  def name
+    "News for Woodworkers"
+  end
+
+  # used as mailing list prefix and countinual prefix, cannot have spaces
+  def shortname
+    name.downcase.gsub(/[^a-z]/, "")
+  end
+end

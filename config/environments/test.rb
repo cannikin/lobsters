@@ -34,3 +34,25 @@ Lobsters::Application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 end
+
+
+# define site name and domain to be used globally, can be overridden in
+# config/initializers/production.rb
+class << Rails.application
+  def allow_invitation_requests?
+    true
+  end
+
+  def domain
+    "test.host"
+  end
+
+  def name
+    "News for Woodworkers"
+  end
+
+  # used as mailing list prefix and countinual prefix, cannot have spaces
+  def shortname
+    name.downcase.gsub(/[^a-z]/, "")
+  end
+end

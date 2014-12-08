@@ -44,25 +44,4 @@ silence_warnings do
   ActionDispatch::ParamsParser::DEFAULT_PARSERS = {}
 end
 
-# define site name and domain to be used globally, can be overridden in
-# config/initializers/production.rb
-class << Rails.application
-  def allow_invitation_requests?
-    true
-  end
-
-  def domain
-    "example.com"
-  end
-
-  def name
-    "Example News"
-  end
-
-  # used as mailing list prefix and countinual prefix, cannot have spaces
-  def shortname
-    name.downcase.gsub(/[^a-z]/, "")
-  end
-end
-
 require "#{Rails.root}/lib/monkey"
