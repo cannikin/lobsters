@@ -44,4 +44,5 @@ end
 group :production do
   gem "unicorn"
   gem "therubyracer"
+  gem "thin"
 end
