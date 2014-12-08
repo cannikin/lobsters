@@ -1,8 +1,8 @@
 Lobsters::Application.routes.draw do
   scope :format => "html" do
-    root :to => "home#index",
-      :protocol => (Rails.application.config.force_ssl ? "https://" : "http://"),
-      :as => "root"
+    root :to => "home#index"#,
+      #:protocol => (Rails.application.config.force_ssl ? "https://" : "http://"),
+      #:as => "root"
 
     get "/rss" => "home#index", :format => "rss"
     get "/hottest" => "home#index", :format => "json"
