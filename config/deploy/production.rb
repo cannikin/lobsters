@@ -1,4 +1,4 @@
-set :user, "dashboard_user"
+set :user, "ubuntu"
 set :appdir, "/var/www"
 set :bundle_without, %w{development test}.join(' ')
 set :rails_env, 'production'
