@@ -38,6 +38,7 @@
       </span>
     </div>
 
+<!--
     <br>
 
     <div class="boxline">
@@ -62,6 +63,7 @@
         :class => "required" %>
       <%= f.select :pushover_sound, Pushover.sounds.map{|k,v| [ v, k ] } %>
     </div>
+-->
 
     <br>
 
@@ -92,6 +94,7 @@
       <%= f.check_box :email_replies %>
     </div>
 
+    <!--
     <div class="boxline">
       <%= f.label :pushover_replies, "Receive Pushover Alert:",
         :class => "required" %>
@@ -100,6 +103,7 @@
         Requires user key entered above
       </span>
     </div>
+    -->
 
     <br>
 
@@ -112,6 +116,7 @@
       <%= f.check_box :email_mentions %>
     </div>
 
+    <!--
     <div class="boxline">
       <%= f.label :pushover_mentions, "Receive Pushover Alert:",
         :class => "required" %>
@@ -120,6 +125,7 @@
         Requires user key entered above
       </span>
     </div>
+    -->
 
     <br>
 
@@ -132,6 +138,7 @@
       <%= f.check_box :email_messages %>
     </div>
 
+    <!--
     <div class="boxline">
       <%= f.label :pushover_messages, "Receive Pushover Alert:",
         :class => "required" %>
@@ -140,6 +147,7 @@
         Requires user key entered above
       </span>
     </div>
+    -->
 
     <br>
 
