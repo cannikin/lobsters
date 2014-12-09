@@ -48,7 +48,7 @@
             "/stories/new" => "Submit Story" }) %>
         <% end %>
 
-        <% links.merge!({ "/search" => "Search" }) %>
+        <%# links.merge!({ "/search" => "Search" }) %>
 
         <% if @cur_url.present? && !links.keys.include?(@cur_url) &&
         @heading.present? %>
