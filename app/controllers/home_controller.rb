@@ -5,13 +5,7 @@ class HomeController < ApplicationController
   before_filter :require_logged_in_user, :only => [ :upvoted ]
 
   def about
-    begin
-      render :action => "about"
-    rescue
-      render :text => "<div class=\"box wide\">" <<
-        "A mystery." <<
-        "</div>", :layout => "application"
-    end
+    @title = "About"
   end
 
   def contact
