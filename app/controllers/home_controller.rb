@@ -14,14 +14,8 @@ class HomeController < ApplicationController
     end
   end
 
-  def privacy
-    begin
-      render :action => "privacy"
-    rescue
-      render :text => "<div class=\"box wide\">" <<
-        "You apparently have no privacy." <<
-        "</div>", :layout => "application"
-    end
+  def contact
+    @title = "Contact"
   end
 
   def hidden
