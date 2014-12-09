@@ -6,6 +6,11 @@
     <%= link_to 'submit a story', new_story_path %>.
   </p>
   <p>
+    The owner of forwoodworkers.com is <%= mail_to 'rob@forwoodworkers.com', 'Rob Cameron' %>, a professional computer
+    programmer and <%= link_to 'hobbiest woodworker', 'http://cameronwoodworks.com' %>.
+    He is a husband and father of two.
+  </p>
+  <p>
     News for Woodworkers is powered by <%= link_to 'Lobste.rs', 'https://lobste.rs/' %>,
     an <%= link_to 'open source', 'https://github.com/jcs/lobsters' %> Ruby on
     Rails application for building link aggregation sites like this.
