@@ -1,6 +1,6 @@
 class BanNotification < ActionMailer::Base
   default :from => "#{Rails.application.name} " <<
-    "<nobody@#{Rails.application.domain}>"
+    "<noreply@forwoodworkers.com>"
 
   def notify(user, banner, reason)
     @banner = banner
